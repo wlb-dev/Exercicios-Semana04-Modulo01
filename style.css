@@ -5,3 +5,6 @@
 .min-height_100vh{
     min-height: 100vh;
 }
+.width_fit_content{
+    width: fit-content;
+}

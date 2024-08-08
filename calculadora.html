@@ -10,19 +10,32 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Calculadora Simples</title>
   </head>
   <body>
-    <main
-      class="card m-3 d-flex align-items-center justify-content-center min-height_100vh"
-    >
-      <h1 class="card-title">Calculadora Simples - SOMA</h1>
-      <label for="nbr01" class="card-text m-3"
-        >Primeiro número: <input type="number" id="nbr01" />
-      </label>
-      <label for="nbr02" class="card-text m-3"
-        >Segundo número: <input type="number" id="nbr02"
-      /></label>
-    </main>
+    <div class="min-height_100vh d-flex justify-content-center">
+      <main
+        class="card d-flex align-items-center justify-content-center width_fit_content p-5 m-auto"
+      >
+        <h1 class="card-title">Calculadora Simples - SOMA</h1>
+        <div class="d-flex flex-column align-items-end">
+          <label for="nbr01" class="card-text m-3"
+            >Primeiro número:
+            <input type="text" id="nbr01" class="text-end" />
+          </label>
+          <label for="nbr02" class="card-text m-3"
+            >Segundo número: <input type="text" id="nbr02" class="text-end"
+          /></label>
+          <!-- <label for="resultado" class="card-text m-3">
+            Resultado: <input type="text" id="resultado" class="text-end" />
+          </label> -->
+        </div>
+        <button class="btn btn-primary btn-lg m-2" onclick="gerarResultado()">
+          Calcular
+        </button>
+        <span id="txt_resultado"> <!--exibição do resultado--></span>
+      </main>
+    </div>
   </body>
 </html>
